@@ -13,7 +13,7 @@ export default function PlayerCurrentStats(props) {
         fetch(`https://statsapi.web.nhl.com/api/v1/people/${props.id}/stats/?stats=yearByYearPlayoffs`)
             .then(response => response.json())
             .then(data => setPlayerStatsPlayoffs(data.stats[0].splits))
-    }, [])
+    }, [props.id])
 
     const nhlRegularSeason = playerStats.filter(season => season.league.id === 133)
     const nhlPlayoffs = playerStatsPlayoffs.filter(season => season.league.id === 133)
