@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    font-family: Garamond,Arial,sans-serif;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    background-color: black;
+    color: white;
+    height: 75px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar--logo {
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    margin-left: 15px;
+}
+
+nav > ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 15px;
+}
+
+.navbar--link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.main {
+    padding-top: 100px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.page--header {
+    margin-bottom: 13px;
+}
+
+.menu--logo {
+    width: 12.5%;
+}
+
+.players-list--logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.players-list {
+    border-collapse: collapse;
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    margin-bottom: 40px;
+}
+
+.players-list > tbody {
+    width: 100%;
+    display: inline-table;
+}
+
+.players-list--header {
+    background-color: black !important;
+    color: white;
+}
+
+.players-list > tbody> tr > td {
+    padding: 5px 10px;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.players-list > tbody > tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.players-list > tbody > tr:hover {
+    background-color: #ddd;
+}
+
+.players-list-row--namecol > * {
+    margin: 0px 5px;
+}
+
+.players-list-row--namecol > img {
+    width: 35px;
+    border: 1px solid #555;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.players-list-row--namecol > a {
+    text-decoration: none;
+    color: #06C;
+}
+
+.players-list-row--namecol > span {
+    font-size: 13px;
+}
+
+.player-header {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(124, 124, 124);
+    color: white;
+    border: 1px solid black;
+}
+
+.player-header > img {
+    display: block;
+    width: 100px;
+}
+
+.player-header--logo {
+    border-radius: 0% !important;
+    border: 0px !important;
+    width: 75px !important;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.player-header--name {
+    margin-left: 20px
+}
+
+.player-info {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+}
+
+.player-info > span::after {
+    margin: 0 10px;
+    content: "•";
+}
+
+.player-info--last::after {
+    content: none !important;
+}
+
+.no-stats-message {
+    margin: 10px 5px;
+}
+
+.player--stats-table {
+    border-collapse: collapse;
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+.player--stats-table > tbody {
+    width: 100%;
+    display: inline-table;
+    padding: 0 10px;
+}
+
+.player--stats-table > tbody > tr > td {
+    padding: 2px 15px;
+    white-space: nowrap;
+}
+
+.player--stats-table--header {
+    background-color: rgb(189, 189, 189);
+    text-align: left;
+}
+
+.player--stats-table--header > th {
+    background-color: rgb(189, 189, 189);
+    text-align: left;
+    padding: 2px 15px;
+}
+
+.player--stats-table--season-type {
+    background-color: black;
+    color: white;
+    width: 250px;
+    text-align: left;
+    padding: 2px 10px;
+}
+
+.player--stats-table > tbody > tr:nth-child(odd){
+    background-color: #f2f2f2;
+}
+
+.player--stats-table > tbody > tr:hover {
+    background-color: #ddd;
+}
+
+.team-stat--display--container {
+    width: 100%;
+}
+
+.team-stat--display {
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 45%;
+    float: left;
+}
+
+.team-stat--display--name {
+    text-align: center;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size: 20px;
+}
+
+.team-stat--display--value {
+    text-align: center;
+}
+
+.team-stat--display--rank {
+    text-align: center;
+    font-size: 25px;
+}
+
+.team-stat--display--rank > span {
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.standing-type-navigator {
+    border-top: 1px solid black;
+    padding-top: 15px;
+    border-bottom: 1px solid black;
+    width:fit-content;
+    margin-bottom: 20px;
+}
+
+.standing-type-navigator > button {
+    border: none;
+    width: 100px;
+    background-color: white;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.standings-table{
+    width: 100%;
+    margin-bottom: 25px;
+    border-collapse: collapse;
+    overflow-x: auto;
+    display: block;
+}
+
+.standings-table > tbody{
+    display: inline-table;
+    width: 100%;
+}
+
+.standings-table > tbody > tr > td {
+    padding: 2px 15px;
+    white-space: nowrap;
+}
+
+.standings-table--header {
+    background-color: black !important;
+    color: white !important;
+}
+
+.standings-table--teamdisplay {
+    display: flex;
+    align-items: center;
+    width: 250px;
+}
+
+.standings-table--teamdisplay > img {
+    width: 50px;
+    margin: 2px 5px;
+}
+
+.standings-table--teamdisplay >h1 {
+    font-size: 20px;
+}
+
+.standings-table > tbody > tr:nth-child(odd){
+    background-color: #f2f2f2;
+}
+
+.standings-table > tbody > tr:hover {
+    background-color: #ddd;
+}
+
+.home-page{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 50px;
+}
+
+.home-page--imglink--container {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+}
+
+.home-page--imglink {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}
+
+.home-page--imglink--text {
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+}
