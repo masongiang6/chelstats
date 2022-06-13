@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/chelstats/static/css/main.8fd11bee.css",
-    "main.js": "/chelstats/static/js/main.02491a5a.js",
+    "main.js": "/chelstats/static/js/main.a54f5db9.js",
     "index.html": "/chelstats/index.html",
     "main.8fd11bee.css.map": "/chelstats/static/css/main.8fd11bee.css.map",
-    "main.02491a5a.js.map": "/chelstats/static/js/main.02491a5a.js.map"
+    "main.a54f5db9.js.map": "/chelstats/static/js/main.a54f5db9.js.map"
   },
   "entrypoints": [
     "static/css/main.8fd11bee.css",
-    "static/js/main.02491a5a.js"
+    "static/js/main.a54f5db9.js"
   ]
 }
