@@ -17,7 +17,7 @@ export default function PlayersListRow(props) {
         playerData.length !== 0 &&
         <tr>
             <td className="players-list-row--namecol">
-                <PlayerImage src={`http://nhl.bamcontent.com/images/headshots/current/168x168/${props.id}.jpg`} />
+                <PlayerImage src={`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${props.id}.jpg`} />
                 <Link to={`/player/${props.id}`}>{playerData[0].fullName}</Link>
                 <span>{playerData[0].primaryNumber ? playerData[0].primaryNumber : "--"}</span>
             </td>

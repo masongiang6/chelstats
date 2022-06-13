@@ -5,7 +5,7 @@ export default function PlayerHeader(props) {
 
     return (
        <div className="player-header">
-           <PlayerImage src={`http://nhl.bamcontent.com/images/headshots/current/168x168/${props.id}.jpg`} />  
+           <PlayerImage src={`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${props.id}.jpg`} />  
            <div className="player-header--name">
                 <h2>{props.firstName}</h2>
                 <h1>{props.lastName}</h1>
