@@ -1,5 +1,6 @@
 import React from "react"
 import PlayerImage from "./PlayerImage"
+import {abbreviations} from '../utility/abbreviations.js'
 
 export default function PlayerHeader(props) {
 
@@ -10,7 +11,7 @@ export default function PlayerHeader(props) {
                 <h2>{props.firstName}</h2>
                 <h1>{props.lastName}</h1>
            </div>
-            <img className="player-header--logo" alt="player" src={`https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/${props.teamId}.svg`}></img>
+            <img className="player-header--logo" alt="player" src={`https://assets.nhle.com/logos/nhl/svg/${abbreviations.get(Number(props.teamId))}_light.svg`}></img>
         </div>
     )
 }

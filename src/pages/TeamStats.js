@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import React from "react"
 import TeamStatsDisplay from '../components/TeamStatsDisplay'
+import {abbreviations} from '../utility/abbreviations.js'
 
 export default function TeamStats() {
 
@@ -12,8 +13,6 @@ export default function TeamStats() {
                        "Goals Against Per Game", "Powerplay Percentage", "Powerplay Goals", "Powerplay Goals Against",
                        "Powerplay Opportunities", "Penalty Kill Percentage", "Shots Per Game", "Shots Allowed Per Game",
                        "Faceoff Percentage", "Shooting Percentage", "Save Percentage"]
-
-    console.log(teamStats)
 
     React.useEffect(() => {
         fetch(`https://statsapi.web.nhl.com/api/v1/teams/${id}/stats`)
@@ -47,7 +46,7 @@ export default function TeamStats() {
 
     return (
         <div>
-            <img alt="team-logo"className="players-list--logo" src={`https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/${id}.svg`}></img>
+            <img alt="team-logo"className="players-list--logo" src={`https://assets.nhle.com/logos/nhl/svg/${abbreviations.get(Number(id))}_light.svg`}></img>
             <div className="team-stat--display--container">
                 {teams}
             </div>

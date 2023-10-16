@@ -1,6 +1,6 @@
-export default function StandingTable(props) {
+import {abbreviations} from '../utility/abbreviations'
 
-    console.log(props.standing)
+export default function StandingTable(props) {
 
     let place = 1
 
@@ -10,7 +10,7 @@ export default function StandingTable(props) {
                 <td>
                     <div className="standings-table--teamdisplay">
                         <span>{place++}</span>
-                        <img alt="teamlogo" src={`https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/${team.team.id}.svg`} />
+                        <img alt="teamlogo" src={`https://assets.nhle.com/logos/nhl/svg/${abbreviations.get(team.team.id)}_light.svg`} />
                         <h1>{team.team.name}</h1>
                     </div>
                 </td>

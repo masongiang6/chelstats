@@ -1,5 +1,6 @@
 import React from "react"
 import PlayersListCategory from "./PlayersListCategory"
+import {abbreviations} from '../utility/abbreviations.js'
 
 export default function PlayersList(props) {
 
@@ -15,11 +16,10 @@ export default function PlayersList(props) {
             })
     }, [props.teamId])
 
-
     return (
         playersList.length !== 0 &&
         <div>
-            <img alt="team-logo"className="players-list--logo" src={`https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/${props.teamId}.svg`}></img>
+            <img alt="team-logo"className="players-list--logo" src={`https://assets.nhle.com/logos/nhl/svg/${abbreviations.get(Number(props.teamId))}_light.svg`}></img>
             <PlayersListCategory header="Forwards" type="Forward" playersList={playersList}/>
             <PlayersListCategory header="Defence" type="Defenseman" playersList={playersList}/>
             <PlayersListCategory header="Goalies" type="Goalie" playersList={playersList}/>
